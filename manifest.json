@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Queue Monitor",
+    "version": "1.0.0",
+    "description": "Monitor ticket queue position and notify user",
+    "permissions": 
+    [
+        "storage", 
+        "notifications",
+        "tabs"
+    ],
+    "host_permissions": 
+    [
+        "https://in.bookmyshow.com/*"
+    ],
+    "background": 
+    {
+        "service_worker": "dist/background/background.js"
+    },
+    "action": 
+    {
+        "default_title": "Queue Monitor",
+        "default_popup": "src/popup/popup.html"
+    },
+    "content_scripts": 
+    [
+        {
+            "matches": ["https://in.bookmyshow.com/*"],
+            "js": ["dist/content/contentscript.js"]
+        }
+    ]
+}

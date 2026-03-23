@@ -1,0 +1,28 @@
+{
+  "name": "queue-monitor",
+  "version": "1.0.0",
+  "description": "A queue monitor extension.",
+  "keywords": [
+    "queue"
+  ],
+  "homepage": "https://github.com/n-are-n/queue-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/n-are-n/queue-monitor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-are-n/queue-monitor.git"
+  },
+  "license": "ISC",
+  "author": "naren",
+  "type": "module",
+  "main": " ",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.38",
+    "typescript": "^5.9.3"
+  }
+}
